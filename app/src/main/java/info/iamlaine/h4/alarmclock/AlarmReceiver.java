@@ -17,6 +17,10 @@ public class AlarmReceiver extends BroadcastReceiver {
         System.out.println("Timer done");
         Toast.makeText(context, "WAKE UP!", Toast.LENGTH_SHORT).show();
         MainActivity.getInstace().beAnnoying();
-        MainActivity.getInstace().updateTheTextView("Hello", R.id.textView);
+        MainActivity.getInstace().updateTextView("", R.id.alertTime);
+        MainActivity.getInstace().showButton(R.id.snooze);
+        MainActivity.getInstace().showButton(R.id.stopAlarm);
+        MainActivity.getInstace().hideButton(R.id.cancelButton);
+        MainActivity.getInstace().hideButton(R.id.timePicker);
     }
 }

@@ -3,11 +3,10 @@ package info.iamlaine.h4.alarmclock;
 /**
  * Created by H4 on 3.2.2016.
  */
-import android.app.AlarmManager;
+
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.TimePickerDialog;
-import android.content.Context;
 import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.widget.TimePicker;
@@ -24,7 +23,7 @@ public class TimeFragment extends DialogFragment implements TimePickerDialog.OnT
         int minute = c.get(Calendar.MINUTE);
 
         // Create a new instance of TimePickerDialog and return it
-        return new TimePickerDialog(getActivity(), this, hour, minute,
+        return new TimePickerDialog(getActivity(),TimePickerDialog.THEME_HOLO_DARK, this, hour, minute,
                 DateFormat.is24HourFormat(getActivity()));
     }
 
