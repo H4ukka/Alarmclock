@@ -44,7 +44,7 @@
             android:id="@+id/cancelButton"
             android:textColor="#ffffff"
             android:background="#00FFFFFF"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="16dp"
             android:onClick="cancel"
             android:textSize="20sp" />
 
@@ -54,8 +54,8 @@
         android:id="@+id/stopAlarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stop Alarm"
-        android:onClick="cancel"
+        android:text="Snooze"
+        android:onClick="snooze"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="215dp"
         android:textColor="#ffffff"
@@ -68,18 +68,18 @@
         android:text="Set Alarm"
         android:onClick="showTimePickerDialog"
         android:id="@+id/timePicker"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="215dp"
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
         android:background="@drawable/buttonshape"
-        android:textSize="24sp" />
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/snooze"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Snooze for 2 minutes"
-        android:onClick="snooze"
+        android:text="Cancel Alarm"
+        android:onClick="cancel"
         android:layout_marginTop="460dp"
         android:background="#00FFFFFF"
         android:textColor="#ffffff"
